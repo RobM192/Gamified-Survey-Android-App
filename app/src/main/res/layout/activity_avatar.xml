@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3BB8E"
+    tools:context=".activities.AvatarSelectActivity">
+
+    <Button
+        android:id="@+id/accept_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/button_color_states"
+        android:onClick="acceptAvatarAndContinue"
+        android:text="Accept"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/robot_button"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/button"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/boy_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/robot" />
+
+    <ImageButton
+        android:id="@+id/boy_button"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/button"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/accept_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/boy" />
+
+    <ImageButton
+        android:id="@+id/girl_button"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/button"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/monkey_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/girl" />
+
+    <ImageButton
+        android:id="@+id/monkey_button"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/button"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/accept_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/monkey" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="293dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="monospace"
+        android:text="Please Choose Your Character"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
